@@ -18,7 +18,7 @@ func GetString(key, fallback string) string {
 	return val
 }
 
-func getInt(key string, fallback int) int {
+func GetInt(key string, fallback int) int {
 	val, ok := os.LookupEnv(key)
 	if !ok {
 		return fallback
